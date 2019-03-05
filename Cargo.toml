@@ -1,0 +1,19 @@
+[package]
+name = "literal"
+version = "0.1.0"
+authors = ["museun <museun@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+csv = "1.0.5"
+serde = { version = "1.0.89", features = ["derive"] }
+
+rand = "0.6.5"
+chrono = "0.4.6"
+multimap = "0.4.0"
+
+termcolor = "1.0.4"
+textwrap = "0.11.0"
+
+[profile.release]
+lto = true
